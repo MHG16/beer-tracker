@@ -17,7 +17,7 @@ url: 'http://small-tiyfe.herokuapp.com/collections/mgrossmann',
 
 */
 
-var beer = [{Beer Name: 'Hijack'}, {Beer Name: 'Hefeweizen'}];
+var beer = [{Name: 'Hijack'}, {Name: 'Hefeweizen'}];
 
 beer.forEach(function(beer) {
 
