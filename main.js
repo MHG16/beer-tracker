@@ -17,7 +17,30 @@ url: 'http://small-tiyfe.herokuapp.com/collections/mgrossmann',
 
 */
 
+var beer = [{Beer Name: 'Hijack'}, {Beer Name: 'Hefeweizen'}];
 
+beer.forEach(function(beer) {
 
+	var settings = $.ajax({
+
+		url: 'http://small-tiyfe.herokuapp.com/collections/mgrossmann',
+		type: 'post',
+		data: beer,
+		datatype: 'json',
+
+		success: function(data) {
+			console.log(beer);
+		},
+
+		error: function(data) {
+			console.log(err);
+		},
+
+		complete: function(data) {
+			console.log('I got a message!');
+		}
+	})	
+
+});
 
 
