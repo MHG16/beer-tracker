@@ -1,0 +1,19 @@
+{
+  "name": "beer-tracker",
+  "version": "1.0.0",
+  "description": "A simple AJAX application to track my favorite beers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "AJAX",
+    "jQuery",
+    "beer"
+  ],
+  "author": "Martin Grossmann",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.0.0"
+  }
+}
