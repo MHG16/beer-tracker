@@ -13,7 +13,7 @@ Phase 2 will allow you to upload a photo of the bottle/glass to the application 
 Phase 3 will allow you to delete and edit entries.  
 
 Use Tiny Pizza Server for AJAX requests in this application:
-url: 'http://small-tiyfe.herokuapp.com/collections/mgrossmann',
+url: 'http://small-tiyfe.herokuapp.com/collections/beer',
 
 */
 
