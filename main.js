@@ -23,7 +23,7 @@ var $beer = $('#beer');
 $(function () {
 	$.ajax({
 		type: 'GET',
-		url: 'http://small-tiyfe.herokuapp.com/collections/beer'
+		url: 'http://small-tiyfe.herokuapp.com/collections/beer',
 		//this part will allow us to get data on the page:
 		success: function(data) {
 			$.each(data, function(i, beer) {
