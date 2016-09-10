@@ -19,6 +19,7 @@ url: 'http://small-tiyfe.herokuapp.com/collections/beer',
 
 var $beer = $('#beer');
 
+//grab all the beer information on page load
 $(function () {
 	$.ajax({
 		type: 'GET',
@@ -27,9 +28,10 @@ $(function () {
 		success: function(data) {
 			$.each(data, function(i, beer) {
 				$beer.append('<li>Name: '+ beer.name +', Type: '+ beer.name +', Brewery: '+ beer.brewery +', Location: '+ beer.location' </li>');
-
 			});
-
+		},
+		error: function() {
+			alert('error loading beer');
 		}
 	});
 
