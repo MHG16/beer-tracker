@@ -17,30 +17,22 @@ url: 'http://small-tiyfe.herokuapp.com/collections/beer',
 
 */
 
-var beer = [{Name: 'Hijack'}, {Name: 'Hefeweizen'}];
+var $beer = $('#beer');
 
-beer.forEach(function(beer) {
-
-	var settings = $.ajax({
-
-		url: 'http://small-tiyfe.herokuapp.com/collections/beer',
-		type: 'post',
-		data: beer,
-		datatype: 'json',
-
+$(function () {
+	$.ajax({
+		type: 'GET',
+		url: 'http://small-tiyfe.herokuapp.com/collections/beer'
+		//this part will allow us to get data on the page:
 		success: function(data) {
-			console.log(beer);
-		},
+			$.each(data, function(i, beer) {
+				$beer.append('<li>Name: '+ beer.name +', Type: '+ beer.name +', Brewery: '+ beer.brewery +', Location: '+ beer.location' </li>');
 
-		error: function(data) {
-			console.log(err);
-		},
+			});
 
-		complete: function(data) {
-			console.log('I got a message!');
 		}
-	})	
+	});
+
+
 
 });
-
-
